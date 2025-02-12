@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".launching_activity"
+    android:background="#D5D0D0"
+    >
+
+
+
+    <TextView
+        android:id="@+id/click"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:text="Start Quiz"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="#547287"
+        android:layout_margin="50dp"
+        />
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
