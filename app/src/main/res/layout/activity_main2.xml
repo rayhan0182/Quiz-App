@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/radius"
+        android:padding="15sp"
+        android:text="Capital Name of Dhaka"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question">
+
+
+        <RadioButton
+            android:id="@+id/op"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mirpur"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+            android:background="@drawable/radius"
+            android:padding="@dimen/_4sdp"
+            />
+
+        <RadioButton
+            android:id="@+id/op2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gulsan"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+            android:background="@drawable/radius"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:padding="@dimen/_4sdp"
+            />
+
+        <RadioButton
+            android:id="@+id/op3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NewMarket"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+            android:background="@drawable/radius"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:padding="@dimen/_4sdp"
+            />
+
+        <RadioButton
+            android:id="@+id/op4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kazipara"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+            android:background="@drawable/radius"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:padding="@dimen/_4sdp"
+            />
+
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submitbtn"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="wrap_content"
+        android:padding="7sp"
+        android:textSize="@dimen/_8sdp"
+        android:text="Submit"
+        android:textColor="#2A464D"
+        android:background="@drawable/radius"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radiogroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40sp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
