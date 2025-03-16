@@ -1,11 +1,8 @@
-package com.rayhan.kotlinquiz
+package com.rayhan.kotlinquiz.Activity
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.rayhan.kotlinquiz.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -19,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         binding.clickButton.setOnClickListener {
 
 
-            startActivity(Intent(this@MainActivity,MainActivity2::class.java))
+            startActivity(Intent(this@MainActivity, MainActivity2::class.java))
 
 
         }
