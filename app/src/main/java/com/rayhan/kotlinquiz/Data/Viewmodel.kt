@@ -1,27 +1,57 @@
 package com.rayhan.kotlinquiz.Data
 
-class viewmodel {
+import androidx.lifecycle.ViewModel
 
-    var localsourcedata = Localsourcedata()
+class viewmodel : ViewModel() {
 
-    var counting = 0
+    var dsource = Localsourcedata().questionlist
 
-    fun currentquiz(): DataModel {
+    var count = 0
 
-        return localsourcedata.questionlist[counting]
+    var score = 0
+
+   fun currentquestion():DataModel{
+
+    return   dsource[count]
+
+   }
+
+    fun nextquestion():DataModel?{
+
+        count++
+
+      return  if (dsource.size>count){
+
+            currentquestion()
+
+        }else{
+
+         null
+
+        }
 
     }
 
-    fun nextquiz(): DataModel {
+    fun correctanser(index:Int){
 
-        counting++
+       if (index==currentquestion().correctanser){
 
-        return currentquiz()
+          score+=2
+
+       }else{
+
+          null
+
+       }
 
     }
 
 
+    fun getscore():Int{
 
+       return score
+
+    }
 
 
 

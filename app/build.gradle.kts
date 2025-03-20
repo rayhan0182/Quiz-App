@@ -57,5 +57,7 @@ dependencies {
     implementation ("com.intuit.sdp:sdp-android:1.1.1")
     implementation ("com.intuit.ssp:ssp-android:1.1.1")
 
+    implementation ("com.airbnb.android:lottie:3.4.0")
+
 
 }

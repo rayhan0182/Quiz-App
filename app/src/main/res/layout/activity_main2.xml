@@ -16,9 +16,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:background="@drawable/radius"
+        android:layout_marginLeft="@dimen/_10sdp"
         android:padding="15sp"
         android:text="Capital Name of Dhaka"
-        android:textSize="@dimen/_15sdp"
+        android:textSize="@dimen/_16sdp"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,12 +27,13 @@
 
     <RadioGroup
         android:id="@+id/radiogroup"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="110dp"
-        android:layout_marginTop="18sp"
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_30sdp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/question">
+        app:layout_constraintTop_toBottomOf="@id/question"
+        >
 
 
         <RadioButton
@@ -83,15 +85,15 @@
 
     </RadioGroup>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/submitbtn"
-        android:layout_width="@dimen/_60sdp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="7sp"
-        android:textSize="@dimen/_8sdp"
+        android:padding="@dimen/_5sdp"
         android:text="Submit"
+        app:cornerRadius="@dimen/_5sdp"
         android:textColor="#2A464D"
-        android:background="@drawable/radius"
+        android:backgroundTint="#FDFBFB"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/radiogroup"
         app:layout_constraintEnd_toEndOf="parent"
